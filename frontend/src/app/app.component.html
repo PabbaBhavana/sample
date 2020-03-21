@@ -1,0 +1,42 @@
+<article>
+  <header>
+    <h1>
+      Customer Manager
+    </h1>
+  </header>
+</article>
+<div class="container-fluid">
+  <div class="row">
+      <div class ="col-lg-4"></div>
+      <div class="col-lg-4">
+          
+          <form>
+            <h3>Filer:</h3>
+          <input type="text" class="form-control" [(ngModel)]="edit.edituser" name ="edituser">
+          <button class="btn btn-secondary" (click)= "adduser()">Add New Customer</button>
+          </form>
+          <table>
+            <tr>
+              <th>firstname</th>
+              <th>lastname</th>
+              <th>address</th>
+              <th>city</th>
+              <th>state</th>
+            </tr>
+     <tr *ngFor="let item of userdata">
+    <td>{{item.firstname}}</td>
+    <td>{{item.lastname}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.city}}</td>
+    <td>{{item.state}}</td>
+  </tr>
+</table>
+      
+      </div>
+  </div>
+</div> 
+<footer>
+  <p>
+    Created by @DanWahlin
+  </p>
+</footer>

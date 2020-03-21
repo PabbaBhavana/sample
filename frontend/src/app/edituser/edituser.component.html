@@ -1,0 +1,26 @@
+<div>
+ <h1>{{firstname}}</h1>
+        <form>
+            <label>firstname</label><br>
+            <input type="text" [(ngModel)]="editform.firstname" name="firstname">
+           <br>
+           <input type="text" [(ngModel)]="editform.lastname" name="lastname">
+            <br>
+            <input type="text" [(ngModel)]="editform.address" name="address">
+            <br>
+            <input type="text" [(ngModel)]="editform.city" name="city">
+            <br>
+            <input type="text" [(ngModel)]="editform.state" name="state">
+            <br>
+           <a><button class="btn btn-secondary" (click)="delete()">delete</button></a>
+   <div class="a1">
+    <button class="btn btn-secondary" (click)="cancel()">cancel</button>
+    <button class="btn btn-secondary" (click)="update()">update</button>
+   </div>
+   </form>
+   <footer>
+    <p>
+      Created by @DanWahlin
+    </p>
+</div>
+    
